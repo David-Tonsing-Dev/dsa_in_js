@@ -1,0 +1,40 @@
+Recursion:
+    the function that calls itself until it doesn't.
+
+Two keys rule:
+    - The process of opening each new box is the same
+    - Each time we open a box, we make the problem smaller
+
+example: 
+    function openGiftBox() {
+        if(isBall) return ball;
+        openGiftBox();
+    }
+
+base case: When we get to the result or the desire output
+recursive case: When we have to call the function itself
+
+**NOTE: if the base case never satisfied and no return statement, it will goes stackoverflow;
+
+Call Stack:
+
+    function funcThree() {
+        console.log("Three");
+    }
+
+    function funcTwo() {
+        funcThree();
+        console.log("Two");
+    }
+
+    function funcOne() {
+        funcTwo();
+        console.log("One");
+    }
+
+    funcOne();
+
+    #Output: 
+        Three // funcThree will execute first and the function will remove/pop from the call stackoverflow
+        Two // funcTwo will be remove from the call stackoverflow
+        One // finally all the call stack will be called and remove.

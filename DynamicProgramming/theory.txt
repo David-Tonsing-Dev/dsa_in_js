@@ -1,0 +1,25 @@
+Terminologies:
+    1. Memoization: Process of storing the answer of sub-problem.
+
+Overlapping Subproblem: The exact same problem repeating with the same exact output.
+Optimized Substructure: 
+    example:
+        A----10----B
+        |          |
+        30         15
+        |          |
+        C----20----D
+
+        the optimal way to reach from A -> D is by finding 
+        - Optimal way to A -> and B -> D 
+        - Which will provide the overall optimal way to reach A -> D
+
+        But if instead:
+
+        A -> C and C -> D the overall will not be optimal.
+
+        **NOTE: 
+        - We must have overlappign Subproblem
+        - We need to have optimize sub-structure
+
+        

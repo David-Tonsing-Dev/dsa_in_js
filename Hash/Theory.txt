@@ -1,0 +1,15 @@
+Hash table:
+
+Terminologies: 
+    1. One way- give input will produce some value as index, but you cant produce the same value using the output index/value
+    2. Determistic -  For each input will have some output vavlue, and will only give the same output value when provided the same input.
+    3. Collision - When input is given, if the output/produce some value is already exist.
+
+Handling Collision:
+    1. Separate Chaining
+    2. Linear probing (open addressing)
+
+
+Big O:
+    O(1);
+    Though collision can make it O(n) but its very rare

@@ -1,0 +1,34 @@
+Heap tree;
+
+    1. The parents node will always be greater than its decendent
+    2. It is alway complete
+    3. It can have duplicate node
+    4. We can have max/min heap. Max heap means the root will node will always be greater
+
+Store heap:
+    1. Store the integer in the array
+    2. Start from index 0 adjacent to the root
+    3. Two way to store:
+        3.1 Store start from index 0
+        3.2 Store start from index 1 left the index 0 empty
+    
+For index 0 is empty:
+    Finding its decendent using parent index:
+        leftChildIndex = 2 * parentIndex;
+        rightChildIndex = 2 * parentIndex + 1;
+
+    Finding its parent using decendent index;
+        parentIndex = Math.floor(childIndex/2);
+
+For index 0 is not empty:
+    Finding its decendent using parent index:
+        leftChildIndex = 2 * parentIndex + 1;
+        rightChildIndex = 2 * parentIndex + 2;
+
+    Finding its parent using decendent index;
+        parentIndex = Math.floor(childIndex/2)-1;
+
+What is priority Queue?
+    - It will always return an item with the highest priority.
+
+Complexity: Inserting or removing will always be O(log n)

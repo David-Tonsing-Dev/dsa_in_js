@@ -1,0 +1,37 @@
+Tree: A tree is like a binary linked list.
+Like look at binary tree:
+A node have left and right pointers, instead of prev and next pointers.
+
+Terminology:
+    1. Full: If the last nodes are points to null and their nodes have both left and right points' to node.
+    2. Perfect: If the level of the height for all the last node are in the level then its perfect, and must be full.
+    3. complete: The overall tree existed
+
+    Parent: A node that points to other nodes
+    Child: The nodes that are pointed by the parent node
+    Leave: The last node that doesn't points to any other nodes.
+
+Example of binary tree:
+    1. All the right node are always greater than their parent nodes and vise-versa for the left
+
+
+BST Big O:
+    2^1-1 = 1 => 2 contant, power of 2 are number of node in that particular level, -1 constant = determine number of nodes upto that level;
+
+    O(log n) -> Best time complexity for BST.
+    O(n) -> Worst possible time complexity for BST.
+
+
+============================================================
+
+Traversal:
+    Terminologies:
+        1. Breath First Search - Start from top node and goes to next line both left and right and so on.
+        2. Depth First Search - starting from the left leave node and goes to right leave node and to the root.
+
+
+    DFS(Depth First Search):
+        1. pre-order: Start at the top and goes to the left first if it can till the leave node and go to the right follow the same process.
+        2. post-order: First traverse to the lowest node value and from there it will move up to the root and again same for the right side.
+        3. in-order: Traverse to the lowest value to the left and printing value from left to root to right, same goes for the right side.
+        
